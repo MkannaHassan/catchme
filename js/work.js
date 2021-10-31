@@ -2,8 +2,8 @@
 var counter = 1;
 var comments = ["hsen looser", "you cant", "booo!", "hahahaha", "stop trying stupid"];
 document.getElementById("i").onmouseover = function(){
-    var a = ((counter*200)%900).toString();
-    var num = ((10*counter)%35).toString();
+    var a = ((counter*200)%700);
+    var num = ((Math.pow(-1,counter)*8*counter)%35).toString();
     this.style.transform = "translateX("+a+"px) translateY("+a+"px) rotate("+num+"deg)" ;
     counter++;
     
